@@ -1,0 +1,33 @@
+#Se debe cumplir
+
+ok	Se debe crear una hebra para el profesor.
+	
+ok	Se deben crear 50 hebras una por cada alumno. 
+	
+ok	Se debe crear un arreglo global con las 50 notas de los alumnos. 
+	
+ok	Cuando el profesor atienda a un alumno, el alumno le indica su nota (puede indicarle el 
+	índice correspondiente a su nota en el arreglo) y la muestra por pantalla, 
+
+ok	el profesor la cambia (sumando un random entre 0  y 10,  siempre que la nota no supere el 100) y la 
+	escribe  en  el  arreglo. 
+	
+ok	Finalmente  el  alumno muestra un mensaje por pantalla  con su 
+	nueva nota. 
+	
+ok	La sala de espera debe ser para 3 alumnos.
+
+ok	Los  alumnos  que  al  llegar  se  encuentran  que  la  sala  de  espera  está  ocupada, 
+	simplemente  se  marchan  y  no  vuelven  (la  hebra  correspondiente  a  ese  alumno  se 
+	termina). 
+	
+ok	El tiempo de atención de un alumno por parte del profesor es de 3T, siendo T un tiempo 
+	a elección (el tiempo de atención se puede simular aplicando un delay en la ejecución de 
+	la hebra del profesor). 
+	
+	Los alumnos llegan cada T, con la excepción de que cada  10 alumnos el intervalo de 
+	llegada aumenta a 10T y luego se mantiene en T. Por ejemplo el tiempo de llegada entre 
+	el 10 alumno y el 11 alumno es de 10T, luego se mantiene en T hasta que llega el 20 y 
+	cambia a 10T, luego  nuevamente cambia a T,así hasta completar los 50 alumnos.
+
+
